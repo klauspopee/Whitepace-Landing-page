@@ -1,0 +1,15 @@
+/* Global Values */
+* { 
+    font-family:"Inter", sans-serif;
+}
+:root {
+    /* praimary colors */
+    --primary-dark-blue: #043873;
+    --primary-light-blue: #4F9CF9;
+    /* secondary colors */
+    --secondary-yellow: #FFE492;
+    --secondary-blue: #A7CEFC;
+    --secondary-white: #FFFFFF;
+    --secondary-black: #212529;
+
+}
