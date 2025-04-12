@@ -13,6 +13,48 @@
     --secondary-white: #FFFFFF;
     --secondary-black: #212529;
 }
+body {
+
+}
+/*Start responsive */
+@media (max-width:320px) {
+    .container {
+        padding: 0 10px;
+    }
+    .section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+@media (min-width:321px) {
+    .container {
+        padding: 0 20px;
+    }
+    .section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+@media (min-width:769px) {
+    .container {
+        padding: 0 32px;
+    }
+    .section {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+}
+@media (min-width:1401px) {
+    .container {
+        padding: 0 220px;
+    }
+    .section {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+}
+/*End responsive */
+/* Start Header */
 header {
     background-color: var(--primary-dark-blue);
     padding: 16px 0;
@@ -20,6 +62,7 @@ header {
 header .container {
     display: flex;
     justify-content: space-between; 
+    position: relative;
 }
 header .container .logo {
     display: flex;
@@ -35,8 +78,14 @@ header .container .logo p {
     font-weight: bold;
     color: white;
 }
+@media (min-width:769px) {
+    header .container .burger {
+        display: none;
+    }
+}
 header .container .links {
     display: flex;
+    
     gap: 60px;
 }
 header .container .links ul {
@@ -59,7 +108,8 @@ header .container .links  .buttons {
     gap: 20px;
 }
 header .container .links .buttons button {
-    padding: 7px 15px;
+    padding: 10px 15px;
+    width: fit-content;
     border: none;
     border-radius: 4px;
 }
@@ -71,3 +121,72 @@ header .container .links  .buttons button:nth-child(2) {
     background-color: var(--primary-light-blue);
     color: white;
 }
+@media (max-width:768px) {
+    header .container .burger {
+        display: visible;
+    }
+    header .container .links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        padding: 15px 0;
+        background-color: var(--primary-light-blue);
+        position: absolute;
+        right: 10%;
+        top: 100%;
+    }
+    header .container .burger:hover + .links {
+        display: flex;
+    }
+    header .container .links ul {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .container .links ul li {
+    }
+    header .container .links .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .container .links .buttons button:nth-child(2) {
+        border: 1px solid black;
+    }
+}
+/* End header */
+/* Start Hero section */
+.hero-section {
+    background-color: var(--primary-dark-blue);
+    background-image: url(../imgs/Element.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-section .container {
+    display: flex;
+}
+.hero-section .container .description h2 {
+    color: white;
+    font-size: 64px;
+    letter-spacing: -2px;
+}
+.hero-section .container .description p {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    padding-top: 24px;
+    line-height: 2;
+    padding-bottom: 60px;
+}
+.hero-section .container .description button {
+    padding: 10px 15px;
+    width: fit-content;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-light-blue);
+    color: white;
+}
+.hero-section .container > img {
+    width: 55%;
+}
+/* End Hero section */
