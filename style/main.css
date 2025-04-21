@@ -58,7 +58,6 @@ body {
 .container .description h2 span {
     display: inline-block;
     position: relative;
-    
 }
 .container .description h2 span img {
     position: absolute;
@@ -66,7 +65,7 @@ body {
     height: 100%;
     left: 0;
     bottom: -28%;
-    z-index: -1;
+    z-index:-1;
 }
 
 /* End Global Rules */
@@ -301,3 +300,146 @@ header .container .links  .buttons button:nth-child(2) {
     }
 }
 /* End Work Management Section */
+/* Start work together section */
+
+.work-together .container {
+    display: flex;
+    align-items: center;
+}
+@media (min-width:768px) {
+    .work-together .container .description {
+        padding-left: 100px;
+    }
+    .work-together .container {
+        padding-top: 100px;
+        padding-bottom: 140px;
+    }
+}
+.work-together .container .description h2 {
+    color: var(--secondary-black);
+    font-size: 64px;
+    letter-spacing: -2px;
+}
+.work-together .container > img {
+    width: 40%;
+}
+.work-together .container .description h2 {
+    font-size: 64px;
+}.work-together .container .description p {
+    font-size: 18px;
+    font-weight: 200;
+    padding-top: 24px;
+    line-height: 2;
+    padding-bottom: 60px;
+    color: var(--secondary-black);
+}
+.work-together .container .description button {
+    padding: 10px 15px;
+    width: fit-content;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-light-blue);
+    color: white;
+}
+@media (max-width:767px) {
+    .work-together {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .work-together .container .description h2 {
+        font-size: 54px;
+    }
+    .work-together .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .work-together .container .description {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .work-together .container > img{
+        width: 90%;
+    }
+}
+@media (max-width:319px) {
+    .work-together .container > img {
+        width: 100%;
+    }
+}
+@media (max-width:320px) {
+    .work-together .container .description h2 {
+        font-size: 36px;
+    }
+}
+/* End work together section */
+/* Start use */
+.use {
+    background-color: var(--primary-dark-blue);
+}
+.use .container {
+    display: flex;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    align-items: center;
+}
+.use .container .description h2 {
+    color: var(--secondary-white);
+    font-size: 64px;
+    letter-spacing: -2px;
+}
+.use .container > img {
+    width: 50%;
+}
+.use .container .description h2 {
+    font-size: 64px;
+}
+.use .container .description h2 span img{
+    z-index: 0;
+}
+.use .container .description p {
+    font-size: 18px;
+    font-weight: 200;
+    padding-top: 24px;
+    line-height: 2;
+    padding-bottom: 60px;
+    color: var(--secondary-white);
+}
+.use .container .description button {
+    padding: 10px 15px;
+    width: fit-content;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-light-blue);
+    color: white;
+}
+@media (max-width:767px) {
+    .use .container .description h2 {
+        font-size: 54px;
+    }
+    .use .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .use .container .description {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .use .container > img{
+        width: 90%;
+    }
+}
+@media (max-width:319px) {
+    .use .container > img {
+        width: 100%;
+    }
+}
+@media (max-width:320px) {
+    .use .container .description h2 {
+        font-size: 36px;
+    }
+}
+/* End use */
