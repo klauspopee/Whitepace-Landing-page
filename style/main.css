@@ -428,7 +428,7 @@ header .container .links  .buttons button:nth-child(2) {
 .use .container .description h2 {
     font-size: 64px;
 }
-.use .container .description h2 span img{
+.use .container .description h2 span {
     z-index: 0;
 }
 .use .container .description p {
@@ -643,3 +643,40 @@ header .container .links  .buttons button:nth-child(2) {
     }
 }
 /* End Prices */
+/* Start Your Work */
+.your-work {
+    background-image: url(../imgs/your-work-img.png);
+    background-repeat: no-repeat;
+    background-color: var(--primary-dark-blue);
+}
+@media (min-width:1400px) {
+    .your-work {
+        background-position: -100px -180px;
+    }
+}
+@media (max-width:1399px) {
+    .your-work {
+        background-position: -300px -180px;
+    }
+}
+.your-work .container {
+    text-align: center;
+}
+.your-work .container .description h2 {
+    color: white;
+}
+.your-work .container .description h2 span {
+    z-index: 0;
+}
+.your-work .container .description p {
+    color: white;
+}
+.your-work .container .description button {
+    padding: 10px 15px;
+    width: fit-content;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-light-blue);
+    color: white;
+}
+/* End Your Work */
