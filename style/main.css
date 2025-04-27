@@ -12,9 +12,11 @@
     --secondary-blue: #A7CEFC;
     --secondary-white: #FFFFFF;
     --secondary-black: #212529;
-}
-body {
-
+    /* font sizes */
+    --h2-desktop:64px;
+    --h2-tablet:54px;
+    --h2-mobile:36px;
+    --p:18px;
 }
 /*Start responsive */
 @media (max-width:320px) {
@@ -55,6 +57,7 @@ body {
 }
 /*End responsive */
 /* Start Global Rules */
+/*Start yellow slash*/
 .container .description h2 span {
     display: inline-block;
     position: relative;
@@ -67,7 +70,48 @@ body {
     bottom: -28%;
     z-index:-1;
 }
-
+/* end yellow slash */
+/* start desciption  */
+.container .description h2 {
+    font-size: var(--h2-desktop);
+    color: var(--secondary-black);
+}
+.container .description p {
+    font-size:var(--p);
+    font-weight: 200;
+    padding-top: 24px;
+    line-height: 2;
+    padding-bottom: 60px;
+    color: var(--secondary-black);
+}
+@media (max-width:768px) {
+    .container .description h2 {
+        font-size: var(--h2-tablet);
+    }
+}
+@media (max-width:320px) {
+     .container .description h2 {
+        font-size:var(--h2-mobile);
+    }
+}
+/* end description */
+/* Start section */
+.section {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+@media (max-width:767px) {
+    .section {
+        padding-top: 60xp;
+        padding-bottom: 60xp;
+    }
+}
+/* end section */
+/* Start ul */
+ul li{
+    list-style-type: none;
+}
+/* End ul */
 /* End Global Rules */
 /* Start Header */
 header {
@@ -108,9 +152,7 @@ header .container .links ul {
     align-items: center;
     gap: 34px
 }
-header .container .links ul li {
-    list-style-type: none;
-}
+
 header .container .links ul li a {
     text-decoration: none;
     color: white;
@@ -126,7 +168,7 @@ header .container .links .buttons button {
     padding: 10px 15px;
     width: fit-content;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 header .container .links  .buttons button:first-child {
     background-color: var(--secondary-yellow);
@@ -207,7 +249,7 @@ header .container .links  .buttons button:nth-child(2) {
     padding: 10px 15px;
     width: fit-content;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: var(--primary-light-blue);
     color: white;
 }
@@ -268,7 +310,7 @@ header .container .links  .buttons button:nth-child(2) {
     padding: 10px 15px;
     width: fit-content;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: var(--primary-light-blue);
     color: white;
 }
@@ -301,7 +343,9 @@ header .container .links  .buttons button:nth-child(2) {
 }
 /* End Work Management Section */
 /* Start work together section */
-
+.work-together {
+    padding-top: 100px;
+}
 .work-together .container {
     display: flex;
     align-items: center;
@@ -309,10 +353,6 @@ header .container .links  .buttons button:nth-child(2) {
 @media (min-width:768px) {
     .work-together .container .description {
         padding-left: 100px;
-    }
-    .work-together .container {
-        padding-top: 100px;
-        padding-bottom: 140px;
     }
 }
 .work-together .container .description h2 {
@@ -337,15 +377,11 @@ header .container .links  .buttons button:nth-child(2) {
     padding: 10px 15px;
     width: fit-content;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: var(--primary-light-blue);
     color: white;
 }
 @media (max-width:767px) {
-    .work-together {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
     .work-together .container .description h2 {
         font-size: 54px;
     }
@@ -379,8 +415,6 @@ header .container .links  .buttons button:nth-child(2) {
 }
 .use .container {
     display: flex;
-    padding-top: 140px;
-    padding-bottom: 140px;
     align-items: center;
 }
 .use .container .description h2 {
@@ -409,7 +443,7 @@ header .container .links  .buttons button:nth-child(2) {
     padding: 10px 15px;
     width: fit-content;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: var(--primary-light-blue);
     color: white;
 }
@@ -421,8 +455,6 @@ header .container .links  .buttons button:nth-child(2) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 60px;
-        padding-bottom: 60px;
     }
     .use .container .description {
         text-align: center;
@@ -453,10 +485,6 @@ header .container .links  .buttons button:nth-child(2) {
     .customise .container .description {
         padding-left: 100px;
     }
-    .customise .container {
-        padding-top: 100px;
-        padding-bottom: 140px;
-    }
 }
 .customise .container .description h2 {
     color: var(--secondary-black);
@@ -480,15 +508,11 @@ header .container .links  .buttons button:nth-child(2) {
     padding: 10px 15px;
     width: fit-content;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: var(--primary-light-blue);
     color: white;
 }
 @media (max-width:767px) {
-    .customise {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
     .customise .container .description h2 {
         font-size: 54px;
     }
@@ -516,3 +540,106 @@ header .container .links  .buttons button:nth-child(2) {
     }
 }
 /* End Costumise */
+/* Start Prices */
+.prices .container {
+    text-align: center;
+}
+.prices .container .cards {
+    display: flex;
+    gap: 32px;
+    perspective: 100px;
+}
+.prices .container .cards .card {
+    text-align: left;
+    border: 1px solid var(--secondary-yellow);
+    padding: 40px 44px;
+    border-radius: 10px;
+}
+.prices .container .cards .offer-two {
+    transform: translateZ(5px);
+}
+.prices .container .cards .card h3 {
+    font-size: 24px;
+    font-weight: 600px;
+    margin-bottom: 25px;
+}
+.prices .container .cards .card .price {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.prices .container .cards .card p {
+    margin-bottom: 24px;
+}
+.prices .container .cards .card ul {
+    padding: 0;
+}
+.prices .container .cards .card ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.prices .container .cards .card ul li img {
+    margin-right: 19px;
+}
+.prices .container .cards .card button {
+    padding: 10px 15px;
+    width: fit-content;
+    border-radius: 8px;
+}
+.prices .container .cards .offer-one button,
+.prices .container .cards .offer-three button {
+    color: var(--secondary-black);
+    border: 1px solid var(--secondary-yellow);
+    background-color: white;
+}
+.prices .container .cards .offer-two {
+    background-color: var(--primary-dark-blue);
+    color: white;
+}
+.prices .container .cards .offer-two div {
+    color: var(--secondary-yellow);
+}
+.prices .container .cards .offer-two button {
+    background-color: var(--primary-light-blue);
+    color: white;
+    border: none;
+}
+.prices .container .cards  .dots {
+    margin-top: 60px;
+    width:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.prices .container .cards .dots div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-light-blue);
+}
+.prices .container .cards .dots .active {
+    background-color: var(--primary-dark-blue);
+}
+@media (min-width:769px) {
+    .prices .container .cards .dots {
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    .prices .container .cards {
+        align-items: center;
+        flex-direction: column;
+    }
+    .prices .container .cards .offer-one,
+    .prices .container .cards .offer-three {
+        display: none;
+    }
+    .prices .container .cards .offer-two {
+        max-width: 400px;
+        transform: translateZ(0);
+    }
+}
+/* End Prices */
