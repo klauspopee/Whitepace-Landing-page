@@ -116,6 +116,7 @@ ul li{
 .description button {
     padding: 10px 15px;
     width: fit-content;
+    cursor: pointer;
     border: none;
     border-radius: 8px;
     background-color: var(--primary-light-blue);
@@ -513,14 +514,6 @@ header .container .links  .buttons button:nth-child(2) {
     padding-bottom: 60px;
     color: var(--secondary-black);
 }
-.customise .container .description button {
-    padding: 10px 15px;
-    width: fit-content;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--primary-light-blue);
-    color: white;
-}
 @media (max-width:767px) {
     .customise .container .description h2 {
         font-size: 54px;
@@ -718,3 +711,66 @@ header .container .links  .buttons button:nth-child(2) {
     }
 }
 /* End your data */
+/* Start sponsors */
+.sponsors .container .description {
+    text-align: center;
+}
+.sponsors .container .companies {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.sponsors .container .companies img {
+    width: fit-content;
+}
+@media (max-width:1151px) {
+    .sponsors .container .companies {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+}
+/* End sponsors */
+/* Start apps */
+.apps {
+    background-color: var(--primary-dark-blue);
+    background-image: url(../imgs/apps-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.apps .container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.apps .container .description h2,
+.apps .container .description p {
+    color: white;
+}
+.apps .container > img {
+    width: 40%;
+}
+
+@media (max-width:767px) {
+    .apps .container .description h2 {
+        font-size: 54px;
+    }
+    .apps .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .apps .container .description {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .apps .container > img{
+        width: 90%;
+    }
+}
+@media (max-width:319px) {
+    .apps .container > img {
+        width: 100%;
+    }
+}
+/* End apps */
