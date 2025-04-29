@@ -774,3 +774,85 @@ header .container .links  .buttons button:nth-child(2) {
     }
 }
 /* End apps */
+/* Start testimonials */
+.testimonials .container {
+    text-align: center;
+}
+.testimonials .container .description {
+    margin-bottom: 60px;
+}
+.testimonials .container .clients {
+    display: flex;
+    gap: 32px;
+}
+.testimonials .container .clients .client {
+    text-align: start;
+    padding: 60px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px gray;
+}
+@media (max-width:1151px) {
+    .testimonials .container .clients .client-one {
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    .testimonials .container .clients .client-one,
+    .testimonials .container .clients .client-three {
+        display: none;
+    }
+    .testimonials .container .clients .client-two {
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.testimonials .container .clients .client > img {
+    margin-bottom: 32px;
+}
+.testimonials .container .clients .client .name-box {
+    display: flex;
+    align-items: center;
+}
+.testimonials .container .clients .client .name-box h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.testimonials .container .clients .client .name-box img {
+    margin-right: 42px;
+}
+.testimonials .container .clients .client >  p {
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid #eee;
+    line-height: 1.8;
+}
+.testimonials .container .clients .client-one p,
+.testimonials .container .clients .client-one  h4 {
+    color: var(--secondary-black);
+}
+.testimonials .container .clients .client-two  p,
+.testimonials .container .clients .client-three p {
+    color: white;
+}
+.testimonials .container .clients .client-two,
+.testimonials .container .clients .client-three {
+    background-color: var(--primary-light-blue);
+}
+.testimonials .container  .dots {
+    margin: 60px auto;
+    width:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.testimonials .container  .dots div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-light-blue);
+}
+.testimonials .container  .dots .active {
+    background-color: var(--primary-dark-blue);
+}
+/* End testimonials */
