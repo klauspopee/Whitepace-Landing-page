@@ -17,7 +17,7 @@ This project is a responsive landing page built with **HTML** and **CSS**, based
 ---
 
 ## 🎨 Design Credit
-Shoutout to the original designer of the Figma template!  
+Shoutout to [Alrazisiam](https://www.figma.com/@alrazisiam) the original designer of the Figma template!  
 👉 [**View the Whitepace template on Figma**](https://www.figma.com/design/c67MARN7dJasXsmB516rqb/Whitepace---SaaS-Landing-Page--Community-?m=auto&t=nwxQlJhOmknD5MIb-6) 
 
 ---
